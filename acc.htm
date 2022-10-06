@@ -1,0 +1,115 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Digital Savings Account Opening </title>  
+<link rel="icon" href="title.png" type="image">
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+}  
+
+.maroontheme{
+    background: #861f41;
+    position: relative;
+    z-index: 9999;
+    box-shadow: 0 1px 5px #ababab;
+    padding:28px ;
+}
+ul { 
+  
+  display: inline;
+  list-style-type: none;
+  margin:3%;
+  padding:0;
+  top: 0;
+}
+li {
+    background:rgb(255, 241, 251) ;
+    float:right;
+
+}
+li a{
+    display:block;
+    color:black;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(a.active)
+{
+    background-color: #97144d;
+    color: white;
+    font-size: medium;
+}
+
+
+button {   
+       background-color:  #97144d;
+       width: 10%;  
+        color:white;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+  
+ input[type=text]{   
+        width: 40%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid rgb(128, 0, 75);   
+        box-sizing: border-box;   
+    }  
+    input[type=textarea]{   
+        width: 40%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid rgb(128, 0, 75);   
+        box-sizing: border-box;   
+    }  
+    
+ button:hover {   
+        opacity: 0.7;   
+    }   
+     
+ .container {  
+    margin-left: 10%; 
+    margin-right: 10%; 
+    padding: 25px;   
+    background-color: rgb(250, 220, 243);  
+    box-shadow: 10px 10px 5px rgb(219, 110, 172);
+    }   
+</style>   
+</head>    
+<body> 
+    <div class="maroontheme">
+        <img src="logo-white.png" id="logo">
+    </div>   
+    <div >
+        <ul >
+            <li ><a href="#" >Deposit</a></li>
+            <li ><a href="#" >Loan</a></li>
+            <li ><a href="#" >Open A/C</a></li>
+            <li ><a href="#" >Dashboard</a></li>
+        </ul>
+    </div>
+    <center style="margin-top: 4%;"> <h1> Account Opening </h1> </center>   
+    <form action="acc.php" method="post">  
+        <div class="container">   
+            <label style="margin-left:20%;margin-right:10px;">Customer Name: </label>   
+            <input type="text" placeholder="Enter name" name="username" required>  <br>
+            <label style="margin-left:24.8%;margin-right: 10px;">Address : </label>   
+            <input type="text" placeholder="Enter address" name="address" required>  <br>
+            <label style="margin-left:27.5%;margin-right:10px;">City : </label>   
+            <input type="text" placeholder="Enter city" name="city" required>  <br>
+            <button type="submit" style="margin-left:40%">Submit</button>
+            <button type="submit" style="margin-left: 20px;">Reset</button>
+             <br>
+          
+        </div>   
+    </form>     
+</body>     
+</html>  
