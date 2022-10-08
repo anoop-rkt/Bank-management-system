@@ -1,2 +1,2 @@
 # Bank-management-system
-Banking system using HTML,CSS, ReactJS ,Php and mysql
+Banking system using HTML,CSS ,Php and mysql
