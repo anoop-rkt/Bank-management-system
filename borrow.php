@@ -92,27 +92,7 @@ td{
                <tr>
               <th style="  padding-right:150px;">
         <div class="h">
-                   
-    <?php
-include('conf.php');
-$sql="SELECT cust_name, depositor.Acc_number, Balance 
-FROM depositor INNER JOIN account 
-ON depositor.Acc_number = account.Account_number" ;
-$res=mysqli_query($conn, $sql);
-echo "<table align= \"left\" border=10  >";
-echo "<tr> <td> Name </td>
-<td> A/C No. </td>
-<td> Balance </td>
-<td> Details </td></tr>";
-while($result=mysqli_fetch_assoc($res))
-{
-echo '<tr ><td>'. $result['cust_name'] . '</td><td>'. 
-$result['Acc_number'] . '</td><td>' . $result['Balance'] . '</td><td><a 
-href="account_detail.php?name=' . $result['cust_name'] .' ">View 
-Details</a></td></tr>';
-}
-echo '</table>';
-?>
+        <a href="deposit.php" ><b>Click to view</b></a>      
         </div>   
 
             </th > <th  style="  padding-left:150px;">
